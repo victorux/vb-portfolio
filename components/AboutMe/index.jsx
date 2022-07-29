@@ -22,11 +22,9 @@ function AboutMe() {
             transition: {
               type: 'spring', duration: 1
             }
-          });
-
+          }).then();
         }
-      },
-      [animation, inView])
+      }, [animation,inView])
 
   return (
     <motion.div className={styles.wrapper}
