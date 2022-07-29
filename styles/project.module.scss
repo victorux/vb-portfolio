@@ -1,0 +1,329 @@
+@import 'breakpoints';
+@import 'colors';
+@import 'fonts';
+
+
+.wrapper {
+  max-width: 1520px;
+  margin: 0  auto;
+  padding: 0;
+
+  @include md {
+    padding: 0 40px;
+  }
+}
+
+.contentWrap{
+  padding: 0 20px;
+
+  @include sm {
+    padding: 0 40px;
+  }
+
+  @include md {
+    padding: 0;
+  }
+}
+
+.coverImg {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.imgWrapper {
+  margin: 20px 0;
+  position: relative;
+  width: 100%;
+
+  span {
+    position: unset !important;
+  }
+
+  @include md {
+    margin: 40px 0;
+  }
+
+  @include xl {
+    margin: 80px 0;
+  }
+}
+
+.back {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  padding: 15px 40px 15px 30px;
+  border-bottom-right-radius: 12px;
+
+
+  &:hover .backArrow {
+    transform: translateX(-7px);
+    transition: all 0.2s ease-in-out;
+  }
+
+  span {
+    display: block;
+  }
+
+  &:hover{
+    color: $warning;
+  }
+}
+
+.backArrow{
+  color: $warning;
+  margin-right: 10px;
+  display: block;
+}
+
+
+.aboutSection{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+
+  @include md{
+    gap: 140px;
+  }
+
+  @include lg{
+    flex-direction: row;
+    gap: 200px;
+  }
+
+  @include xl{
+    gap: 280px;
+  }
+}
+
+
+.leftBlock {
+  margin-bottom: 40px;
+
+
+  p {
+    color: $black;
+    font-weight: $normal;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    max-width: 850px;
+    letter-spacing: .35px;
+
+    @include md{
+      font-size: 1.3rem;
+      line-height: 2.15rem;
+    }
+  }
+}
+
+.rightBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  @include lg {
+    flex-direction: column;
+    margin-top: 134px;
+    width: 30%;
+  }
+
+
+  ul{
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+
+    li {
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+      font-weight: $normal;
+
+      @include md{
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+      }
+    }
+  }
+
+  p {
+    font-weight: $normal;
+    font-size: 1.3rem;
+    line-height: 2.44rem;
+    max-width: 700px;
+    letter-spacing: .35px;
+  }
+}
+
+.sTitle{
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: $black;
+  font-weight: $extra-bold;
+  font-family: $sans-serif;
+  letter-spacing: 1px;
+  opacity: 0.35;
+
+  @include md{
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+}
+
+.title{
+  font-family: $sans-serif !important;
+  color: #1F2025;
+  font-size: 1.6rem;
+  margin: 20px 0;
+
+  @include md{
+    font-size: 1.8rem;
+  }
+
+
+  @include lg{
+    font-size: 2.5rem;
+  }
+
+  @include lg{
+    font-size: 2.8rem;
+  }
+}
+
+
+.paragraph{
+  display: flex;
+  flex-direction: column;
+  gap: 0 20px;
+  margin: 1.25rem auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  p{
+    display: block;
+    max-width: 850px;
+    color: $black;
+    font-weight: $normal;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    letter-spacing: 0.8px;
+    text-align: left;
+
+    @include md{
+      font-size: 1.3rem;
+      line-height: 2.15rem;
+      text-align: left;
+    }
+  }
+}
+
+.row {
+  flex-direction: row;
+}
+
+
+.space30{
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+
+.link{
+
+    color: $main;
+    font-family: $sans-serif;
+    font-size: 1.3125rem;
+    border-bottom: 3px solid $warning;
+
+
+    span{
+      color: $warning;
+    }
+
+    &:hover{
+      color: $warning;
+      transition: color 0.33s ease;
+    }
+}
+
+
+.heading {
+  font-family: $sans-serif !important;
+  line-height: 1.2;
+  font-weight: $extra-bold;
+  color: #1F2025;
+  font-size: 1.4rem;
+  margin: 20px 0;
+  max-width: 850px;
+
+  @include md {
+    font-size: 1.6rem;
+  }
+
+
+  @include lg {
+    font-size: 2.5rem;
+  }
+
+  @include lg {
+    font-size: 2.8rem;
+  }
+}
+
+.techWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 850px;
+
+  @include md {
+    gap: 40px;
+  }
+
+  @include lg {
+    gap: 50px;
+    margin-top: 30px;
+  }
+}
+
+.iconWrap{
+  display: block;
+  position: relative;
+  width: 68px;
+  height: 68px;
+
+  @include md{
+    width: 90px;
+    height: 90px;
+  }
+
+  @include lg{
+    width: 110px;
+    height: 110px;
+  }
+}
+
+
+.iconTitle{
+  display: block;
+  text-align: center;
+  font-weight: $normal;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+
+  @include md{
+    font-size: 1.3rem;
+  }
+}

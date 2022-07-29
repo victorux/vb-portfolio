@@ -1,0 +1,59 @@
+@import 'breakpoints';
+@import 'fonts';
+@import 'colors';
+
+
+.headerContainer{
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:  0 20px;
+}
+
+.title {
+  font-weight: $normal;
+  font-family: $serif;
+  margin-top: 200px;
+  text-align: center;
+  color: $black;
+
+  @include xs {
+    font-size: 1.8rem;
+    margin-top: 140px;
+  }
+  @include md {
+    font-size: 2.375rem;
+    margin-top: 140px;
+  }
+  @include lg {
+    font-size: 2.625rem;
+    margin-top: 200px;
+  }
+  @include xl {
+    font-size: 3rem;
+  }
+  @include xxl {
+    font-size: 3.25rem;
+  }
+}
+
+.description {
+  text-align: center;
+  font-family: $sans-serif;
+  color: $black;
+  opacity: 0.5;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.scrollBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}

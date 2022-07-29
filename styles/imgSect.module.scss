@@ -1,0 +1,62 @@
+@import 'breakpoints';
+
+.section {
+  margin-top: 200px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 1;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  max-width: 1520px;
+  margin: 0 auto;
+
+  @include xs {
+    height: 350px;
+  }
+
+  @include md {
+    height: 500px;
+    padding: 0 20px;
+  }
+
+
+  @include lg {
+    padding: 0 40px;
+    height: 700px;
+  }
+
+
+  div {
+    position: relative;
+    width: auto;
+    align-self: stretch;
+    flex: 1 1 auto;
+  }
+
+
+
+
+  :nth-child(2){
+    @include md {
+      display: block;
+    }
+
+    display: none;
+  }
+
+  :nth-child(3){
+    display: none;
+
+    @include lg {
+      display: block;
+    }
+  }
+}

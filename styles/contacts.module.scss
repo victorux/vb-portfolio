@@ -1,0 +1,446 @@
+@import 'breakpoints';
+@import 'colors';
+@import 'fonts';
+
+
+// input numbers
+
+
+.wrapper {
+  background: linear-gradient(180deg, #FDFBF8, #fff);
+  max-width: 1400px;
+  height: auto;
+  margin: 100px auto;
+  border-radius: 30px;
+
+  @include xs {
+    padding: 0 30px;
+  } 
+
+  @include md {
+    padding: 0 80px;
+  }
+}
+
+
+.sectionTitle {
+  font-family: $sans-serif;
+  font-weight: $extra-bold;
+  text-align: center;
+  background: -webkit-linear-gradient(303deg, #FFC6C6 30%, #67BB36);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.625rem;
+
+  @include xs {
+    padding-top: 40px;
+  } 
+
+  @include md {
+    font-size: 2.625rem;
+    padding-top: 40px;
+  }
+
+  @include lg {
+    font-size: 4rem;
+    padding-top: 80px;
+  }
+}
+
+
+.blocks {
+  display: flex;
+  justify-content: center;
+  transform: translate(0, 50px);
+  flex-wrap: nowrap;
+  flex-direction: column;
+  
+  @include xs {
+    transform: translate(0, 0);
+    margin-bottom: 0;
+    gap: 40px;
+    align-items: center;
+  }
+
+  @include lg{
+    flex-direction: row;
+    gap: 70px;
+    align-items: flex-start;
+  }
+
+  @include lg{
+    gap: 100px;
+  }
+}
+
+.secondTitlte{
+  text-align: center;
+  font-size: 1.5rem;
+  color: $black;
+  font-family: $sans-serif;
+  font-weight: $bold;
+  line-height: 1;
+  padding: 0;
+  margin: 0 0 40px 0;
+
+  @include md{
+    font-size: 2.4rem;
+  }
+}
+
+.social {
+  max-width: 500px;
+  width: 100%;
+}
+
+.socialContainer{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background-image: linear-gradient(200deg, #FFFFFF 0%, #FFFFFF 100%); 
+  box-shadow: 5px 8px 10px 0 rgba(233,233,233,0.25);
+
+  @include xs {
+    padding: 20px;
+    width: 100%;
+  }
+
+  @include md{
+    padding: 40px;
+  }
+}
+
+.iconsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 40px;
+
+  a svg:hover{
+   opacity: 0.5;
+   transition: .2s all ease-out;
+  }
+}
+
+
+.copyright {
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: $sans-serif;
+  font-weight: $normal;
+  color: #616482;
+  letter-spacing: 0.3px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.6rem;
+  opacity: 0.5;
+  transition: all 250ms ease;
+
+  &:hover {
+    opacity: 1;
+    cursor: default;
+  }
+  
+  span{
+    color: #C284FC;
+  }
+}
+
+
+
+// Chat
+
+.chat {
+  background-color: #fff;
+  max-width: 500px;
+  overflow: hidden;
+  background-image: linear-gradient(200deg, #FFFFFF 0%, #FFFFFF 100%); 
+  box-shadow: 7px 12px 16px 0 rgba(233,233,233,0.50); 
+  border-radius: 20px 20px 12px 12px;
+
+  @include xs{
+    padding: 20px;
+    width: 100%;
+  }
+
+  @include sm{
+    padding: 25px;
+  }
+
+  @include md{
+    padding: 44px;
+  }
+}
+
+
+.imageWrapper {
+  box-sizing: border-box;
+}
+
+.imageWrapper > div {
+  overflow: hidden;
+  width: fit-content;
+  border-radius: 25px;
+  padding: 0;
+  margin: 0;
+  width: 47px;
+  height: 47px;
+}
+
+.victor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+
+  span {
+    color: #616482;
+    font-family: $sans-serif;
+    letter-spacing: 1px;
+    font-weight: $medium;
+  }
+}
+
+
+@keyframes example {
+  0% {opacity: 0; transform: scale(0.95);}
+  100% {opacity: 1; transform: scale(1);}
+
+}
+
+.animateChat{
+  opacity: 0;
+  animation-name: example;
+  animation-duration: 900ms;
+  animation-fill-mode: forwards;
+}
+
+.chatBox {
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid #f0f0f2;
+  border-radius: 12px;
+  resize: none;
+  font-family: $sans-serif;
+  color: $black;
+
+  @include xs {
+    font-size: 1.2rem;
+    min-height: 200px;
+    padding: 10px;
+  }
+
+  @include sm{
+    font-size: 1.4rem;
+    min-height: 130px;
+    padding: 20px;
+  }
+
+  @include md{
+    font-size: 1.5rem;
+  }
+
+  &::placeholder{
+    font-family: $sans-serif;
+    color: $gray_300;
+    @include xs {
+      font-size: 1.2rem;
+    }
+  
+    @include sm{
+      font-size: 1.4rem;
+    }
+  
+    @include md{
+      font-size: 1.5rem;
+    }
+  }
+
+  &:focus {
+    border: 2px solid #d7d7d7;
+    outline: none;
+    transition: 100ms all ease-in-out;
+  }
+  
+}
+
+.error{
+  color: $warning;
+  font-size: 1rem;
+}
+
+.inputError{
+  border: 2px solid rgba(223, 101, 101, 0.538) !important;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+
+  .button{
+    border-radius: 12px;
+    background-color: $black;
+    border: none;
+    font-family: $sans-serif;
+    font-weight: $semi-bold;
+    font-size: 1.3125rem;
+    cursor: pointer;
+    color: $white;
+  
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed; 
+  }
+    @include xs{
+      padding: 14px 18px;
+    }
+
+    @include md{
+      padding: 20px 25px;
+    }
+  }
+}
+
+
+.green{
+  background: #2A9F39;
+}
+
+.black{
+  background: $black;
+}
+
+.gray{
+  background-color: $gray_300;
+}
+
+
+
+
+.botConversation{
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 0px 12px 12px 12px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    position:absolute;
+    top:-40px;
+    left:0;
+    height:40px;
+    width: 40px;
+    border-bottom-left-radius: 50%;
+    background:#FFF;
+    box-shadow: 0 20px 0 0 #F5F5F5;
+  }
+}
+
+.botHeader{
+  font-size: 1.5rem;
+  color: #5990FF;
+  font-family: $sans-serif;
+  font-weight: $semi-bold;
+}
+
+.botText{
+  font-weight: $light;
+  padding: 0;
+  margin: 10px 0 0 0;
+
+  @include xs {
+    font-size: 1.2rem;
+  }
+
+  @include sm{
+    font-size: 1.4rem;
+  }
+
+  @include md{
+    font-size: 1.5rem;
+  }
+}
+
+.titleUserDetails {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: $bold;
+  font-size: 1.8rem;
+}
+
+.userInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user_input{
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-family: $sans-serif;  
+  color: $black;
+  border: 2px solid #f0f0f2;
+
+  @include xs {
+    font-size: 1rem;
+  }
+
+  @include sm{
+    font-size: 1.2rem;
+  }
+
+  @include md{
+    font-size: 1.3rem;
+  }
+
+  &::placeholder{
+    font-family: 2rem;  
+    color: $gray_300;
+
+    @include xs {
+      font-size: 1rem;
+    }
+  
+    @include sm{
+      font-size: 1.2rem;
+    }
+  
+    @include md{
+      font-size: 1.3rem;
+    }
+
+  }
+
+  &:focus {
+    border: 2px solid #d7d7d7;
+    outline: none;
+    transition: 100ms all ease-in-out;
+  }
+}
+
+
+.mailLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  color: $main;
+  border-bottom: 4px solid $warning;
+  padding-bottom: 4px;
+}
+
+
+
+.noSpin {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance:textfield;
+}

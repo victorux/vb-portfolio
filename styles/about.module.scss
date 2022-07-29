@@ -1,0 +1,152 @@
+@import 'breakpoints';
+@import 'colors';
+@import 'fonts';
+
+
+
+.wrapper {
+
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @include xs {
+    padding: 0 40px;
+  } 
+
+  @include md {
+    padding: 60px;
+  }
+
+  @include xxl {
+    padding: 0px;
+  } 
+
+  h2 {
+    margin-top: 60px;
+    font-family: $serif;
+    font-weight: $semi-bold;
+    font-size: 2rem;
+    text-align: left;
+
+    @include xs {
+      margin-top: 80px;
+    } 
+  
+    @include md {
+      margin-top: 220px;
+      font-size: 2.625rem;
+    }
+  
+  }
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+
+  @include sm{
+    gap: 40px;
+  }
+
+  @include md{
+    gap: 60px;
+  }
+  @include lg{
+    gap: 60px;
+  }
+   
+  @include lg{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+.leftSection {
+  flex: 3.5;
+}
+
+.rightSection {
+  flex: 5;
+  border-radius: 22px;
+  box-shadow: 4px 4px 11px 0 rgba(0,0,0,0.05);
+  padding: 20px 30px;
+  background: #fff;
+  p {
+    color: $gray_400;
+  }
+}
+
+.description {
+  font-size: 1.3125rem;
+  letter-spacing: 0.6px;
+  color: $black;
+  line-height: 1.9;
+}
+
+
+.appsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+
+  li{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3125rem;
+
+    @include sm{
+      flex-basis: 45%;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid $gray_200;
+  padding: 20px 35px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 180ms ease-in-out;
+  
+  &:hover {
+    background: $gray_50;
+  }
+
+  span {
+    margin-right: 7px;
+    font-size: 1.3125rem;
+    font-weight: $medium;
+    color: $main;
+    user-select: none;
+  }
+}
+
+.containerBtn{
+ display: flex;
+ justify-content: flex-start;
+ margin-bottom: 20px;
+}
+
+.chevron {
+  transform: rotate(0deg);
+  transition: all 500ms;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: all 500ms;
+}

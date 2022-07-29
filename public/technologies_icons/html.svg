@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="139px" height="139px" viewBox="0 0 139 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>HTML</title>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01" transform="translate(-217.000000, 0.000000)">
+            <g id="HTML" transform="translate(217.000000, 0.000000)">
+                <rect id="bg-rectangle" fill="#F2F2F3" x="0" y="0" width="139" height="139" rx="23"></rect>
+                <g id="html_icon" transform="translate(38.000000, 33.000000)" fill-rule="nonzero">
+                    <polygon id="Path" fill="#E34F26" points="5.35896774 65.4499477 0 0 64 0.131525026 58.3334194 65.4499477 32.2415484 73"></polygon>
+                    <polygon id="Path" fill="#EF652A" points="31 67 31 6 57 6.08848727 52.3635438 60.6648321"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="50.2636818 21.0194933 51 13 11 13 13.2099729 37.586555 40.8157932 37.586555 39.733212 48.0729874 30.892302 50.4959201 21.9215434 47.8524384 21.4449225 41.595784 13.5134622 41.595784 14.5970619 54.373648 30.8917928 59 47.3163724 54.373648 49.5263453 29.4350429 20.5344544 29.4350429 19.7110613 21.0194933"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
