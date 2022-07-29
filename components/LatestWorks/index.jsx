@@ -20,7 +20,7 @@ function LatestWorks() {
   return (
     <div className={styles.wrapper}>
       <h2 id="works">My Latest Works</h2>
-      <p>Some Things I've Built</p>
+      <p>Some Things I have built</p>
       <div className={styles.masonry}>
 
         {/* Left {Big blocks} */}

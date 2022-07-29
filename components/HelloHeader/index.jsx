@@ -16,7 +16,7 @@ function HelloHeader() {
       animate={{opacity: 1, y: 0}}
       transition={{type: 'spring', duration: 1, delay: 0.3}}
     >
-      <h1 className={styles.title}>Hi, I'm Frontend Developer!</h1>
+      <h1 className={styles.title}>Hi, I am Frontend Developer!</h1>
       <p className={styles.description}>I like to design and code beautifuly simple things.</p>
       <div className={styles.scrollBtn}>        
         <svg width="27" height="42" xmlns="http://www.w3.org/2000/svg">

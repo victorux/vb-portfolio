@@ -8,6 +8,7 @@ function LogoSection({height, width}) {
   return (
     <div>
       <Link href="/">
+        {/* eslint-disable-next-line react/no-string-refs */}
         <a className={styles.linkContainer} ref="ddBtn">
         <div  className={[styles.logoContainer].join(' ')}>
           <Image
