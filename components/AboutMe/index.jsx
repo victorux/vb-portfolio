@@ -40,7 +40,7 @@ function AboutMe() {
         </p>
       </div>
       <div className={styles.rightSection}>
-        <p>Few technologies I've been working with recently:</p>
+        <p>Few technologies Ive been working with recently:</p>
         <div>
           <RecentUsedApps />
         </div>
