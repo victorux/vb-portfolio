@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import styles from '../../styles/about.module.scss'
 import RecentUsedApps from './RecentUsedApps'
-import { motion, useAnimation } from 'framer-motion'
+import { motion, useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 
@@ -14,18 +14,19 @@ function AboutMe() {
   const animation = useAnimation();
 
 
-  useEffect(()=> {
-    if(inView){
-      animation.start({
-        opacity: 1, 
-        y: 0,
-        transition: {
-          type: 'spring', duration: 1
-        }
-      });
+  useEffect(() => {
+        if (inView) {
+          animation.start({
+            opacity: 1,
+            y: 0,
+            transition: {
+              type: 'spring', duration: 1
+            }
+          });
 
-    }
-  }, [inView])
+        }
+      },
+      [animation, inView])
 
   return (
     <motion.div className={styles.wrapper}
