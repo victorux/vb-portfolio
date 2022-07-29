@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 import { DeviceSizes } from '../../responsive/index';
 
 
-function index() {
+function LetsConnect() {
 
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -34,4 +34,4 @@ function index() {
   )
 }
 
-export default index
+export default LetsConnect
