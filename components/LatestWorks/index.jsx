@@ -1,9 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from '../../styles/latestWorks.module.scss'
-import Image from 'next/image'
 import Link from 'next/link'
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 
 // Import Project Preview Images
 import cpImg from '../../public/projects/coffetino/preview.jpg'
