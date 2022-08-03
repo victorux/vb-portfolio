@@ -42,9 +42,9 @@ function TechIcons(props){
         <div className={styles.techWrap}>
             {
                 icons_name.map((icon) => (
-                    <div key={icon.index} >
+                    <div key={icons_data[icon]['title']}>
                         <div className={styles.iconWrap}>
-                            <Image key="" src={`${icons_data[icon]['src']}`} alt={`${icon}`} layout="fill" />
+                            <Image src={`${icons_data[icon]['src']}`} alt={`${icon}`} layout="fill" />
                         </div>
                         <span className={styles.iconTitle}>{`${icons_data[icon]['title']}`}</span>
                     </div>

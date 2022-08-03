@@ -17,6 +17,7 @@ function LogoSection({height, width}) {
             height={height}
             width={width}
             alt={"Logo"}
+            priority
           />
         </div>
           <span className={styles.logoTitle}>Victor Botan</span>
