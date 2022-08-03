@@ -23,6 +23,10 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  // back button - scrool back to same position
+  experimental: {
+    scrollRestoration: true,
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,

@@ -19,8 +19,10 @@ function LeftItem(props) {
       animation.start({
         opacity: 1, 
         y: 0,
+        scale: 1,
         transition: {
-          type: 'spring', duration: 1, delay: 0.3
+          duration: 0.4,
+          delay: 0.6
         }
       });
 
@@ -30,13 +32,13 @@ function LeftItem(props) {
 
   return (
     <motion.div ref={ref} className={styles.project__item_right}
-            initial={{ opacity: 0, y: 70}}
+            initial={{ opacity: 0, y: 80, scale: 0.85}}
             animate={animation}
           >
             <Link href={props.link}>
               <a>
                 <div className={styles.imgg}>
-                  <Image src={props.imgSrc} layout="responsive" />
+                  <Image src={props.imgSrc} layout="responsive" alt="" />
                 </div>
                 <div className={styles.project__desc}>
                   <div className={styles.project__title}>{props.title}</div>

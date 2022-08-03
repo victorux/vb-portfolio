@@ -23,7 +23,7 @@ function Navbar(props) {
       <motion.header className={styles.header}
         initial={{ y: -100, opacity: 0}}
         animate={{ y: 0, opacity: 1}}
-        transition={{type: 'spring', duration: 0.6}}
+        transition={{duration: 0.6}}
       >
         <LogoSection />
         { !isMobile && <NavSection/> }

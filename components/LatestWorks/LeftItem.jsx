@@ -19,8 +19,10 @@ function LeftItem(props) {
       animation.start({
         opacity: 1, 
         y: 0,
+        scale: 1,
         transition: {
-          type: 'spring', duration: 1, delay: 0.1
+          duration: 0.3,
+          delay: 0.3,
         }
       });
 
@@ -30,7 +32,7 @@ function LeftItem(props) {
 
   return (
     <motion.div ref={ref} className={styles.project__item_left}
-            initial={{ opacity: 0, y: 70}}
+            initial={{ opacity: 0, y: 80, scale: 0.9}}
             animate={animation}
           >
             <Link href={props.link}>

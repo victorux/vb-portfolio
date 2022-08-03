@@ -20,7 +20,8 @@ function AboutMe() {
             opacity: 1,
             y: 0,
             transition: {
-              type: 'spring', duration: 1
+              duration: 0.5,
+              delay: 0.2
             }
           }).then();
         }
@@ -28,7 +29,7 @@ function AboutMe() {
 
   return (
     <motion.div className={styles.wrapper}
-      initial={{ opacity: 0, y: 70}}
+      initial={{ opacity: 0, y: 120}}
       animate={animation}
     >
     <h2>About Me</h2>

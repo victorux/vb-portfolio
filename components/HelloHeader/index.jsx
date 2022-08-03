@@ -14,7 +14,7 @@ function HelloHeader() {
     <motion.section className={styles.headerContainer}
       initial={{opacity: 0, y: 30}}
       animate={{opacity: 1, y: 0}}
-      transition={{type: 'spring', duration: 1, delay: 0.3}}
+      transition={{duration: 0.2, delay: 0.6}}
     >
       <h1 className={styles.title}>Hi, I am Frontend Developer!</h1>
       <p className={styles.description}>I like to design and code beautifuly simple things.</p>
