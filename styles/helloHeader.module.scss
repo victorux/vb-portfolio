@@ -56,4 +56,18 @@
   align-items: center;
   justify-items: center;
   cursor: pointer;
+
+  &:hover svg > g > rect{
+    transition: 0.3s ease-in-out;
+    stroke: $warning;
+  }
+
+  &:hover svg > g > circle{
+    fill: $warning;
+  }
+
+  &:hover > a {
+    transition: 0.3s ease-in-out;
+    color: $warning;
+  }
 }
