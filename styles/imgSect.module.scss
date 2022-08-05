@@ -14,25 +14,8 @@
   overflow: hidden;
   gap: 20px;
   padding: 0;
-  margin: 0;
   max-width: 1520px;
   margin: 0 auto;
-
-  @include xs {
-    height: 350px;
-  }
-
-  @include md {
-    height: 500px;
-    padding: 0 20px;
-  }
-
-
-  @include lg {
-    padding: 0 40px;
-    height: 700px;
-  }
-
 
   div {
     position: relative;

@@ -14,7 +14,7 @@ function DropDown() {
 
   return (
     <div>
-      <div className={styles.dropDownBtn}>
+      <div className={styles.dropDownContainer}>
         <Link href="/">
           <a className={[styles.btn, dropDown ? styles.dropDownButtonActive : null].join(' ')} onMouseEnter={showDropDown} onMouseLeave={hideDropDown} onClick={(e) => e.preventDefault()}><span className={dropDown ? styles.mailOpacity : null}>hi.victorb@gmail.com</span><ChevronDown className={dropDown ? styles.mailOpacity : null} /></a>
         </Link>

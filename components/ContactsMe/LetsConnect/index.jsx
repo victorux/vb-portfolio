@@ -20,7 +20,7 @@ function LetsConnect() {
   return mounted && (
     <div className={styles.social}>
       <div className={styles.socialContainer}>
-        <h3 className={styles.secondTitlte}>Let’s Connect</h3>
+        <h3 className={styles.secondTitlte}>Contact Me</h3>
         { !isMobile && <DropDown/> }
         { isMobile && <Link href='mailto:hi.victorb@gmail.com'><a className={styles.mailLink}><Mail /><span>hi.victorb@gmail.com</span></a></Link> }
         <div className={styles.iconsContainer}>

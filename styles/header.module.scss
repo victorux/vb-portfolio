@@ -8,12 +8,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  @include xs {
-    margin-top: 25px;
+  margin: 20px 0;
+
+  @include md {
+    margin: 30px 0;
   }
   @include lg {
-    margin-top: 50px;
+    margin: 40px 0;
+  }
+  @include xl {
+    margin: 50px 0;
   }
 }
 
@@ -21,19 +25,11 @@
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
+  padding: 0 20px;
 
-  @include xs {
-    padding: 0 20px;
-  } 
-
-  @include md {
-    padding: 40px;
+  @include lg{
+    padding: 0 40px;
   }
-
-  @include xxl {
-    padding: 0px;
-  } 
-
 }
 
 .linkContainer {
@@ -104,6 +100,12 @@
   }
 }
 
+.dropDownContainer {
+  position: relative;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
 .btn {
   // background-color: $accent;
   padding: 20px 35px;
@@ -113,10 +115,6 @@
   cursor: default;
   z-index: 99;
   box-shadow: 1px 0 0 0 $gray_300, 0 1px 0 0 $gray_300, 0 -1px 0 0 $gray_300, -1px 0 0 0 $gray_300;
-}
-
-.dropDownBtn {
-  position: relative;
 }
 
 .dropDownMenu {
@@ -171,7 +169,7 @@
   justify-content: flex-start;
   border-top: 1px solid $gray_200;
   width: 100%;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 
   & span {
     display: block;
