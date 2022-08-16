@@ -1,7 +1,6 @@
 import React, { Children } from 'react'
-import { Link } from 'react-scroll'
+// import { Link } from 'react-scroll'
 import styles from '../../styles/project.module.scss'
-
 function AboutProject(props) {
   const roles = props.roles;
   return (

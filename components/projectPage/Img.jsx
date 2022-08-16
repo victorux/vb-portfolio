@@ -28,7 +28,7 @@ function Img(props){
             });
 
         }
-    }, [inView])
+    }, [inView, animation])
 
     return (
         <motion.div className={styles.imgWrapper}
@@ -36,7 +36,7 @@ function Img(props){
                     initial={{ opacity: 0, y: 70}}
                     animate={animation}
         >
-            <Image className={styles.coverImg} src={props.srcImg} layout="fill" style={{zIndex: 0}}  />
+            <Image className={styles.coverImg} src={props.srcImg} layout="fill" style={{zIndex: 0}} alt="" />
         </motion.div>
     )
 }

@@ -16,6 +16,7 @@ import Paragraph from "../../components/projectPage/Paragraph";
 import Splitter from "../../components/projectPage/Splitter";
 import Img from "../../components/projectPage/Img"
 import TechIcons from "../../components/projectPage/TechIcons";
+import ContactsMe from "../../components/ContactsMe";
 
 
 
@@ -34,6 +35,7 @@ export default function ProjectPage({frontmatter: {title, date, image}, mdxSourc
       <MDXRemote {...mdxSource} components={components} image={image}>
       </MDXRemote>
     </div>
+    <ContactsMe />
   </>)
 }
 

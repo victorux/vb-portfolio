@@ -89,16 +89,17 @@
 .aboutSection{
   display: flex;
   flex-direction: column;
+  align-items: baseline;
   gap: 20px;
   margin-top: 40px;
 
   @include md{
-    gap: 140px;
+    gap: 80px;
   }
 
   @include lg{
     flex-direction: row;
-    gap: 200px;
+    gap: 180px;
   }
 
   @include xl{
