@@ -123,8 +123,8 @@
 
 .dropDownMenu {
   height: auto;
-  opacity: 0;
-  transform-origin: top;
+  transform: scale(0);
+  transform-origin: top center;
   position: absolute;
   list-style-type: none;
   padding: 4px 0 0 0;
@@ -133,11 +133,11 @@
   bottom: -68;
   width: 100%;
   transition: all 0.3s ease;
-  overflow: hidden;
 }
 
 .show {
   opacity: 1;
+  transform: scale(1);
 }
 
 .dropDownButtonActive {
