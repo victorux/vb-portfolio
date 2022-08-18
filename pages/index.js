@@ -14,6 +14,7 @@ import Link from 'next/link'
 
 
 export default function Home({ projects }) {
+    
   return (
     <div>
       <Head>

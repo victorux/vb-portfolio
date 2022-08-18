@@ -12,8 +12,8 @@ const variants = {
 function HelloHeader() {
   return (
     <motion.section className={styles.headerContainer}
-      initial={{opacity: 0, y: 30}}
-      animate={{opacity: 1, y: 0}}
+      initial={{opacity: 0,}}
+      animate={{opacity: 1}}
       transition={{duration: 0.2, delay: 0.6}}
     >
       <h1 className={styles.title}>Hi, I am Frontend Developer!</h1>

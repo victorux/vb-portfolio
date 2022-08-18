@@ -115,66 +115,69 @@
   cursor: default;
   z-index: 99;
   box-shadow: 1px 0 0 0 $gray_300, 0 1px 0 0 $gray_300, 0 -1px 0 0 $gray_300, -1px 0 0 0 $gray_300;
+
+  &:hover {
+    border-bottom-color: unset;
+  }
 }
 
 .dropDownMenu {
+  height: auto;
   opacity: 0;
-  transform: scaleY(0);
   transform-origin: top;
   position: absolute;
   list-style-type: none;
-  padding: 0 30px;
+  padding: 4px 0 0 0;
   margin: 0;
   left: 0;
   bottom: -68;
-  background-color: $white;
   width: 100%;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  box-shadow: 1px 0 0 0 $gray_300, 0 1px 0 0 $gray_300, -1px 0 0 0 $gray_300;
-  transition: 300ms ease;
-}
-
-.dropDownButtonActive {
-  background: $accent_dark;
-  opacity: 1 !important;
-  border-radius: 12px;
-  background-color: $white;
-  box-shadow: 1px 0 0 0 $gray_300, 0 -1px 0 0 $gray_300, -1px 0 0 0 $gray_300;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  transition: 150ms ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .show {
-  position: absolute;
   opacity: 1;
-  transform: scaleY(1);
-  transition: 150ms ease-in-out;
 }
 
-.mailOpacity{
-  opacity: 1;
+.dropDownButtonActive {
+  background-color: #eaecf2;
+  box-shadow: 1px 0 0 0 #eaecf2, 0 1px 0 0 #eaecf2, 0 -1px 0 0 #eaecf2, -1px 0 0 0 #eaecf2;
+  transition-delay: 0.05s;
 }
 
 
 .dropdownItem {
   cursor: pointer;
   font-weight: $normal;
-  padding: 15px 0 15px 0;
+  padding: 10px 20px;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  border-top: 1px solid $gray_200;
+  margin-bottom: 4px;
   width: 100%;
   letter-spacing: 0.2px;
+  border-radius: 12px;
 
   & span {
     display: block;
     margin-top: 5px;
     margin-right: 6px;
+  }
+}
+
+.bgDefault {
+  background: #eff1f7;
+
+  &:hover {
+    background: #dee6ff;
+  }
+}
+
+.bgGreen {
+  background: #d9ead4;
+  &:hover {
+    background: #d9ead4;
   }
 }
 
@@ -185,10 +188,6 @@
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: all 200ms ease;
-
-  &:hover {
-    text-decoration-color: #586bf7;
-  }
 }
 
 .dropdownItemTextCopied {

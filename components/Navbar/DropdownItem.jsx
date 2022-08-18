@@ -24,7 +24,7 @@ function DropdownItem(props) {
     
       props.copy 
       ? (
-      <li className={copied ? [styles.dropdownItem, styles.cursorDefault].join(' ') : styles.dropdownItem}>
+      <li onClick={copyText} className={copied ? [styles.dropdownItem, styles.cursorDefault, styles.bgGreen].join(' ') : [styles.dropdownItem, styles.bgDefault].join(' ')}>
         <span>
           {
             copied ?
@@ -33,9 +33,10 @@ function DropdownItem(props) {
             (<LeftIcon size={22} color={copied ? '#0A0A18' : '#586bf7'}/>)
           }
         </span>
-        <span className={copied ? styles.dropdownItemTextCopied : styles.dropdownItemText}>{copied ? "Copied to clipboard!" : <a onClick={copyText} className={styles.dropdownItemText}>{props.children}</a>}</span>
+        <span className={copied ? styles.dropdownItemTextCopied : styles.dropdownItemText}>{copied ? "Copied to clipboard!" : `${props.children}`}
+        </span>
       </li>) 
-      : (<li className={styles.dropdownItem}><span><LeftIcon size={22} color='#586bf7' /></span><Link href='mailto:hi.victorb@gmail.com'><a className={styles.dropdownItemText}>{props.children}</a></Link></li>)
+      : (<li className={[styles.dropdownItem, styles.bgDefault].join(' ')}><span><LeftIcon size={22} color='#586bf7' /></span><Link href='mailto:hi.victorb@gmail.com'><a className={styles.dropdownItemText}>{props.children}</a></Link></li>)
     
   )
 }

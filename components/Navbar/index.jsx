@@ -21,11 +21,11 @@ function Navbar(props) {
   return mounted && (
     <div className={styles.wrapper} style={{zIndex: 999}}>
       <motion.header className={styles.header}
-        initial={{ y: -100, opacity: 0}}
-        animate={{ y: 0, opacity: 1}}
-        transition={{duration: 0.6}}
+        initial={{ translateY:-100, opacity: 0}}
+        animate={{ translateY: 0, opacity: 1}}
+        transition={{duration: 0.3}}
       >
-        <LogoSection />
+        <LogoSection width={62} height={62} />
         { !isMobile && <NavSection/> }
         { isMobile && <NavSectionMobile/> }
       </motion.header>

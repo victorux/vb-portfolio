@@ -15,9 +15,10 @@ function DropDown() {
   return (
     <div>
       <div className={styles.dropDownContainer}>
-        <Link href="/">
-          <a className={[styles.btn, dropDown ? styles.dropDownButtonActive : null].join(' ')} onMouseEnter={showDropDown} onMouseLeave={hideDropDown} onClick={(e) => e.preventDefault()}><span className={dropDown ? styles.mailOpacity : null}>hi.victorb@gmail.com</span><ChevronDown className={dropDown ? styles.mailOpacity : null} /></a>
-        </Link>
+            <div className={[styles.btn, dropDown ? styles.dropDownButtonActive : null].join(' ')} onMouseEnter={showDropDown} onMouseLeave={hideDropDown} >
+                hi.victorb@gmail.com
+                <ChevronDown />
+            </div>
        <ul className={[styles.dropDownMenu, (dropDown ? styles.show : null)].join(' ')} onMouseEnter={showDropDown} onMouseLeave={hideDropDown}>
           <DropdownItem icon={Copy} copy={true}>Copy</DropdownItem>
           <DropdownItem icon={Mail} copy={false}>Open in your mail app</DropdownItem>
