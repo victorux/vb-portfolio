@@ -26,8 +26,8 @@ export default function ProjectPage({frontmatter: {title, date, image}, mdxSourc
   return (
   <>
     <Head>
-      <title>Welcome to homepage</title>
-      <meta name="description" content="This is my official portfolio website" />
+      <title>Project: {title}</title>
+      <meta name="description" content="" />
       <link rel="icon`" href="/favicon.ico" />
     </Head>
     <Navbar />
