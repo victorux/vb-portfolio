@@ -9,7 +9,7 @@ function victor() {
     <div className={styles.victor}>
       <div className={styles.imageWrapper}>
         <div>
-         <Image src={VictorImg} />
+         <Image src={VictorImg} alt="victor" />
         </div>
       </div>
       <span className={styles.victorAvatar}>Victor</span>

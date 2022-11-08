@@ -27,7 +27,7 @@ function LeftItem(props) {
       });
 
     }
-  }, [inView])
+  });
 
 
   return (

@@ -25,7 +25,7 @@ function Paragraph(props){
             });
 
         }
-    }, [inView])
+    });
 
     return (
         <motion.div

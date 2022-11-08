@@ -25,7 +25,7 @@ function AboutMe() {
             }
           }).then();
         }
-      }, [animation,inView])
+      });
 
   return (
     <motion.div className={styles.wrapper}

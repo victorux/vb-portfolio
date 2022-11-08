@@ -25,7 +25,7 @@ function Heading(props) {
             });
 
         }
-    }, [inView])
+    });
 
     return (
         <motion.div ref={ref}
