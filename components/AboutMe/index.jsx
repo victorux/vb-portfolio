@@ -36,7 +36,7 @@ function AboutMe() {
     <div ref={ref} className={styles.container}>
       <div className={styles.leftSection}>
         <p className={styles.description}>
-        As a Front-End Developer with a strong background in both UX/UI design and web development, I bring a unique perspective to creating digital experiences. My 4 years of experience in UX/UI design and the last 3 years specifically dedicated to front-end web development have honed my skills in creating visually stunning and user-friendly interfaces. I am currently a student at the University of Limerick, studying Computer Science and focusing on front-end development using React. I am dedicated to staying current with the latest technologies and design principles, and am excited to bring my skills and experience to your company to help create innovative, user-centric products.
+        I&apos;m a Front-End Developer with a mix of UI design and development skills. I&apos;ve been working in the field for 5+ years, with the last 3 focused on front-end web development. I&apos;m currently studying Computer Science at the University of Limerick and focusing on using React. I&apos;m always learning new things and looking for ways to create great user experiences.
         </p>
       </div>
       <div className={styles.rightSection}>
