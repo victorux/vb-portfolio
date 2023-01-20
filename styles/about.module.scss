@@ -69,16 +69,26 @@
   box-shadow: 4px 4px 11px 0 rgba(0,0,0,0.05);
   padding: 20px 30px;
   background: #fff;
+  font-size: 1.1rem;
+  
   p {
     color: $gray_400;
   }
+
+  @include md{
+    font-size: 1.3125rem;
+  }
+  
 }
 
 .description {
-  font-size: 1.3125rem;
   letter-spacing: 0.6px;
   color: $black;
   line-height: 1.9;
+  font-size: 1.1rem;
+  @include md{
+    font-size: 1.3125rem;
+  }
 }
 
 
@@ -99,7 +109,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.3125rem;
+    font-size: 1.1rem;
+    @include md{
+      font-size: 1.3125rem;
+    }
 
     @include sm{
       flex-basis: 45%;
@@ -122,10 +135,14 @@
 
   span {
     margin-right: 7px;
-    font-size: 1.3125rem;
     font-weight: $medium;
     color: $main;
     user-select: none;
+
+    font-size: 1.1rem;
+    @include md{
+      font-size: 1.3125rem;
+    }
   }
 }
 
@@ -133,6 +150,7 @@
  display: flex;
  justify-content: flex-start;
  margin-bottom: 20px;
+ 
 }
 
 .chevron {

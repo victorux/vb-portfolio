@@ -47,6 +47,13 @@
   opacity: 0.5;
   margin-top: 40px;
   margin-bottom: 40px;
+  font-size: 1.1rem;
+  letter-spacing: 0.25px;
+  
+  @include md{
+    font-size: 1.3125rem;
+    letter-spacing: normal;
+  }
 }
 
 .scrollBtn {
@@ -56,6 +63,11 @@
   align-items: center;
   justify-items: center;
   cursor: pointer;
+  font-size: 1.1rem;
+  
+  @include md{
+    font-size: 1.3125rem;
+  }
 
   &:hover svg > g > rect{
     transition: 0.3s ease-in-out;

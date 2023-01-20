@@ -188,7 +188,12 @@
     color: $gray_400;
     font-weight: normal;
     margin-top: 5px;
-    letter-spacing: 1px;
+    letter-spacing: 0.40px;
+
+    font-size: 1.1rem;
+    @include md{
+      font-size: 1.3125rem;
+    }
 
     @include xs {
       opacity: 1;
