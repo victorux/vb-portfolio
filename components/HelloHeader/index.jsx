@@ -17,7 +17,7 @@ function HelloHeader() {
       transition={{duration: 0.2, delay: 0.6}}
     >
       <h1 className={styles.title}>Hi, I am Frontend Developer!</h1>
-      <p className={styles.description}>I like to design and code beautifuly simple things.</p>
+      <p className={styles.description}>I am passionate about creating functional designs through efficient coding.</p>
       <div className={styles.scrollBtn}>        
         <svg width="27" height="42" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">

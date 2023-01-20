@@ -35,6 +35,22 @@ function TechIcons(props){
         'sass': {
             src: '/technologies_icons/sass.svg',
             title: 'Scss/Sass'
+        },
+        'styled': {
+            src: '/technologies_icons/styled.svg',
+            title: 'Styled'
+        },
+        'socket': {
+            src: '/technologies_icons/socket.svg',
+            title: 'Socket.io'
+        },
+        'express': {
+            src: '/technologies_icons/express.svg',
+            title: 'Express'
+        },
+        'stripe': {
+            src: '/technologies_icons/stripe.svg',
+            title: 'Stripe.svg'
         }
     }
     const icons_name = props.icons;

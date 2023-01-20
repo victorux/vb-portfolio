@@ -42,7 +42,7 @@ function AboutMe() {
         {/*  asaa*/}
         {/*  asaa*/}
         {/*  asaa*/}
-        Hello! My name is Victor and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+        As a Front-End Developer with a strong background in both UX/UI design and web development, I bring a unique perspective to creating digital experiences. My 4 years of experience in UX/UI design and the last 3 years specifically dedicated to front-end web development have honed my skills in creating visually stunning and user-friendly interfaces. I am currently a student at the University of Limerick, studying Computer Science and focusing on front-end development using React. I am dedicated to staying current with the latest technologies and design principles, and am excited to bring my skills and experience to your company to help create innovative, user-centric products. In my free time, I enjoy traveling and going to the gym to keep myself physically and mentally fit.
         </p>
       </div>
       <div className={styles.rightSection}>

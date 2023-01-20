@@ -33,7 +33,7 @@ function ContactsMe() {
       initial={{ opacity: 0, y: 70}}
       animate={animation}
     >
-      <h2 className={styles.sectionTitle}>Its your turn!</h2>
+      <h2 className={styles.sectionTitle}>It&apos;s your turn!</h2>
       <div className={styles.blocks}>
         <Chat/>
         <LetsConnect/>

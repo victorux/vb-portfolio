@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 // Import Project Preview Images
 import cpImg from '../../public/projects/coffetino/preview.jpg'
-import adsImg from '../../public/projects/ads/preview.webp'
-import aceImg from '../../public/projects/ace/preview.webp'
-import finetekImg from '../../public/projects/finetek/preview.webp'
+import realestateImg from '../../public/projects/realestate/preview.webp'
+import chatboxImg from '../../public/projects/chatbox/preview.webp'
+import artdecoImg from '../../public/projects/artdeco/preview.webp'
 import LeftItem from './LeftItem'
 import RightItem from './RightItem'
 
@@ -22,8 +22,8 @@ function LatestWorks() {
 
         {/* Left {Big blocks} */}
         <div className={styles.masonry__left}>
-          <LeftItem link="/projects/coffetino" imgSrc={cpImg} title="Coffetino" tags="UI/UX, Frontend, Backend, E-commerce" />
-          <LeftItem link="/projects/acecoinpay" imgSrc={aceImg} title="AceCoinPay" tags="UI Design, Frontend" />
+          <LeftItem link="/projects/chatbox" imgSrc={chatboxImg} title="Chatbox App" tags="UX/UI, Frontend, Backend, Socket.io" />
+          <LeftItem link="/projects/coffetino" imgSrc={cpImg} title="Coffetino" tags="UX/UI, Frontend, Backend, E-commerce" />
         </div>
 
 
@@ -32,8 +32,8 @@ function LatestWorks() {
         >
           
           {/* Project Item */}
-          <RightItem link="/projects/artdecosolution" imgSrc={adsImg} title="Artdeco Solution" tags="Web Design, Logo, Frontend" />
-          <RightItem link="/projects/finetek" imgSrc={finetekImg} title="FineTek" tags="Frontend" />
+          <RightItem link="/projects/realestate" imgSrc={realestateImg} title="Real Estate" tags="High fidelity wireframe, prototype" />
+          <RightItem link="/projects/artdeco" imgSrc={artdecoImg} title="Artdeco Solution" tags="Logo Design, Landing Page Design, Developing" />
           <div>
             <Link href="/">
               <a className={styles.project__seemore}>See more works</a>
