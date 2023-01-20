@@ -29,7 +29,7 @@ function LetsConnect() {
           <Link href="https://dribbble.com/survex"><a target="_blank" title='Dribbble'><Dribbble color='#23273B' /></a></Link>
         </div>
       </div>
-      <div className={styles.copyright}>© 2022. <br />Site made with NextJS, Vercel. <br/>Designed and built by <span>Victor Botan</span> </div>
+      <div className={styles.copyright}>© 2022. <br />Site made with NextJS, and deployed on Vercel. <br/>Designed and built by <span>Victor Botan</span> </div>
     </div>
   )
 }

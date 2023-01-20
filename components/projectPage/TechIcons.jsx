@@ -50,7 +50,7 @@ function TechIcons(props){
         },
         'stripe': {
             src: '/technologies_icons/stripe.svg',
-            title: 'Stripe.svg'
+            title: 'Stripe'
         }
     }
     const icons_name = props.icons;
