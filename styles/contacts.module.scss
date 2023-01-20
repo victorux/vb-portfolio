@@ -225,37 +225,22 @@
   resize: none;
   font-family: $sans-serif;
   color: $black;
+  font-size: 1.1875rem;
 
   @include xs {
-    font-size: 1.2rem;
     min-height: 200px;
     padding: 10px;
   }
 
   @include sm{
-    font-size: 1.4rem;
     min-height: 130px;
     padding: 20px;
-  }
-
-  @include md{
-    font-size: 1.5rem;
   }
 
   &::placeholder{
     font-family: $sans-serif;
     color: $gray_300;
-    @include xs {
-      font-size: 1.2rem;
-    }
-  
-    @include sm{
-      font-size: 1.4rem;
-    }
-  
-    @include md{
-      font-size: 1.5rem;
-    }
+    font-size: 1.1875rem;
   }
 
   &:focus {
@@ -355,18 +340,8 @@
   font-weight: $light;
   padding: 0;
   margin: 10px 0 0 0;
-
-  @include xs {
-    font-size: 1.2rem;
-  }
-
-  @include sm{
-    font-size: 1.4rem;
-  }
-
-  @include md{
-    font-size: 1.5rem;
-  }
+  font-size: 1.1875rem;
+  letter-spacing: 0.30px;
 }
 
 .titleUserDetails {
@@ -388,34 +363,11 @@
   font-family: $sans-serif;  
   color: $black;
   border: 2px solid #f0f0f2;
-
-  @include xs {
-    font-size: 1rem;
-  }
-
-  @include sm{
-    font-size: 1.2rem;
-  }
-
-  @include md{
-    font-size: 1.3rem;
-  }
+  font-size: 1.1875rem;;
 
   &::placeholder{
-    font-family: 2rem;  
+    font-size: 1.1875rem; 
     color: $gray_300;
-
-    @include xs {
-      font-size: 1rem;
-    }
-  
-    @include sm{
-      font-size: 1.2rem;
-    }
-  
-    @include md{
-      font-size: 1.3rem;
-    }
 
   }
 

@@ -7,12 +7,13 @@ import NextIcon from '../../public/icons/nextjs.svg'
 import TailwindcssIcon from '../../public/icons/tcss.svg'
 import PsIcon from '../../public/icons/ps.svg'
 import SketchIcon from '../../public/icons/sketch.svg'
-import TsIcon from '../../public/icons/typescript.svg'
 import MongoIcon from '../../public/icons/mongodb.svg'
 import FigmaIcon from '../../public/icons/figma.svg'
 import NodeIcon from '../../public/icons/node.svg'
 import ReduxIcon from '../../public/icons/redux.svg'
 import RestApiIcon from '../../public/icons/restapi.svg'
+import ExpressIcon from '../../public/icons/express.svg'
+
 
 function Tech() {
 
@@ -33,7 +34,7 @@ function Tech() {
             <li><NodeIcon width="40" height="40" /><span>Node.js</span></li>
             <li><TailwindcssIcon width="40" /><span>TailwindCSS</span></li>
             <li><ReduxIcon width="40" /><span>Redux</span></li>
-            <li><TsIcon width="40" height="40" /><span>TypeScript</span></li>
+            <li><ExpressIcon width="40" height="40" /><span>Express</span></li>
             <li><SketchIcon width="40" /><span>Sketch</span></li>
             <li><PsIcon width="40" /><span>Photoshop</span></li>
             <li><FigmaIcon width="40" /><span>Figma</span></li>

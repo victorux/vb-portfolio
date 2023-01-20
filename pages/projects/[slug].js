@@ -17,11 +17,11 @@ import Splitter from "../../components/projectPage/Splitter";
 import Img from "../../components/projectPage/Img"
 import TechIcons from "../../components/projectPage/TechIcons";
 import ContactsMe from "../../components/ContactsMe";
-
+import NextProject from '../../components/projectPage/NextProject';
 
 
 export default function ProjectPage({frontmatter: {title, date, image}, mdxSource}){
-  var components = {Cover, AboutProject, ContentWrap, Heading, Paragraph, Splitter, Img, TechIcons}
+  var components = {Cover, AboutProject, ContentWrap, Heading, Paragraph, Splitter, Img, TechIcons, NextProject}
 
   return (
   <>

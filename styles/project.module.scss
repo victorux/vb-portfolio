@@ -332,3 +332,68 @@
     font-size: 1.3rem;
   }
 }
+
+// Next Project Section
+.nextProjectContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  @include md {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 1.6rem;
+
+    @include md {
+      font-size: 1.6rem;
+    }
+
+    @include lg {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+
+
+.rightBox {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #DADADA;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;;
+  font-size: 1.1rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+
+  @include md {
+    align-items: flex-end;
+    width: 400px;
+  }
+
+  &:hover {
+    border: 1px solid #3145DF;
+  }
+
+  span{
+    opacity: 0.5;
+  }
+
+  h3 {
+    color: #3145DF;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
