@@ -17,7 +17,7 @@ const UserDetails = (props) => {
     async function handleOnSubmit(e){
       e.preventDefault();
       const formData = formik.values;
-      fetch('/api/mail', {
+      fetch('https://victorbotan.com/api/mail', {
         method: 'post',
         body: JSON.stringify(formData)
       }).then(() =>  nextStep())
