@@ -15,6 +15,7 @@ const UserDetails = (props) => {
 
   // Send email
   async function handleOnSubmit(e) {
+    console.log(formik.values);
     e.preventDefault();
     const formData = formik.values;
     await fetch("https://victorbotan.com/api/mail", {
