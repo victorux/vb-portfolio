@@ -20,13 +20,20 @@ export default async (req, res) => {
   //   html: message.replace(/\r\n/g, "<br>"),
   // };
 
-  await mail.send({
-    to: "hi.victorb@gmail.com",
-    from: "hi.victorb@gmail.com",
-    subject: "New Project Proposal",
-    text: message,
-    html: message.replace(/\r\n/g, "<br>"),
-  });
+  await mail
+    .send({
+      to: "hi.victorb@gmail.com",
+      from: "hi.victorb@gmail.com",
+      subject: "New Project Proposal",
+      text: message,
+      html: message.replace(/\r\n/g, "<br>"),
+    })
+    .then(() => {
+      console.log("Email sent");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 
   res.status(200).json({ status: "Ok" });
 };
