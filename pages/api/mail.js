@@ -22,7 +22,7 @@ export default async (req, res) => {
 
   await mail
     .send({
-      to: "hi.victorb@gmail.com",
+      to: "viart.inc@gmail.com",
       from: "hi.victorb@gmail.com",
       subject: "New Project Proposal",
       text: message,
