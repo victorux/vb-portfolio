@@ -5,7 +5,7 @@ import Link from "next/link";
 // Import Project Preview Images
 import cpImg from "../../public/projects/coffetino/preview.jpg";
 import irelandGolfBallsImg from "../../public/projects/irelandgolfballs/preview.jpg";
-import chatboxImg from "../../public/projects/chatbox/preview.webp";
+import chatboxImg from "../../public/projects/chatbox/preview.jpg";
 import bymateImg from "../../public/projects/bymate/preview.jpg";
 import LeftItem from "./LeftItem";
 import RightItem from "./RightItem";
@@ -22,13 +22,13 @@ function LatestWorks() {
             link="/projects/bymate"
             imgSrc={bymateImg}
             title="Bymate"
-            tags="FYP, Research, UX/UI, Frontend, Backend"
+            tags="FYP, UX/UI, Frontend, Backend"
           />
           <LeftItem
             link="/projects/coffetino"
             imgSrc={cpImg}
             title="Coffetino"
-            tags="UX/UI, Frontend, Backend, E-commerce"
+            tags="UX/UI, Frontend, Backend"
           />
         </div>
 
@@ -39,13 +39,13 @@ function LatestWorks() {
             link="/projects/irelandgolfballs"
             imgSrc={irelandGolfBallsImg}
             title="IrelandGolfBalls"
-            tags="Research, UX/UI, Prototype"
+            tags="UX/UI"
           />
           <RightItem
             link="/projects/chatbox"
             imgSrc={chatboxImg}
             title="Chatbox App"
-            tags="UX/UI, Frontend, Backend, Socket.io"
+            tags="UX/UI, Frontend, Backend"
           />
           <div>
             <Link href="/">

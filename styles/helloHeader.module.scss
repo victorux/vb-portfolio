@@ -1,21 +1,22 @@
-@import 'breakpoints';
-@import 'fonts';
-@import 'colors';
+@import "breakpoints";
+@import "fonts";
+@import "colors";
 
-
-.headerContainer{
+.headerContainer {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding:  0 20px;
+  padding: 0 20px;
 }
 
 .title {
   font-weight: $normal;
   font-family: $serif;
+  max-width: 800px;
+  line-height: 1.4;
   margin-top: 200px;
   text-align: center;
   color: $black;
@@ -49,8 +50,8 @@
   margin-bottom: 40px;
   font-size: 1.1rem;
   letter-spacing: 0.25px;
-  
-  @include md{
+
+  @include md {
     font-size: 1.3125rem;
     letter-spacing: normal;
   }
@@ -64,17 +65,17 @@
   justify-items: center;
   cursor: pointer;
   font-size: 1.1rem;
-  
-  @include md{
+
+  @include md {
     font-size: 1.3125rem;
   }
 
-  &:hover svg > g > rect{
+  &:hover svg > g > rect {
     transition: 0.3s ease-in-out;
     stroke: $warning;
   }
 
-  &:hover svg > g > circle{
+  &:hover svg > g > circle {
     fill: $warning;
   }
 
