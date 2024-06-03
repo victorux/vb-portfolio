@@ -48,10 +48,10 @@ function LatestWorks() {
             title="Chatbox App"
             tags="UX/UI, Frontend, Backend, 2023"
           />
-          <div>
+          {/* <div>
             <Link href="/">
               <a className={styles.project__seemore}>See more works</a>
-            </Link>
+            </Link> */}
           </div>
           {/* end proj */}
         </div>
