@@ -21,13 +21,13 @@ function LatestWorks() {
             link="/projects/bymate"
             imgSrc={bymateImg}
             title="Bymate"
-            tags="FYP, UX/UI, Frontend, Backend"
+            tags="FYP, UX/UI, Frontend, Backend, 2024"
           />
           <LeftItem
             link="/projects/coffetino"
             imgSrc={cpImg}
             title="Coffetino"
-            tags="UX/UI, Frontend, Backend"
+            tags="UX/UI, Frontend, Backend, 2022"
           />
         </div>
 
@@ -38,13 +38,13 @@ function LatestWorks() {
             link="/projects/irelandgolfballs"
             imgSrc={irelandGolfBallsImg}
             title="IrelandGolfBalls"
-            tags="UX/UI"
+            tags="UX/UI, 2024"
           />
           <RightItem
             link="/projects/chatbox"
             imgSrc={chatboxImg}
             title="Chatbox App"
-            tags="UX/UI, Frontend, Backend"
+            tags="UX/UI, Frontend, Backend, 2023"
           />
           <div>
             <Link href="/">
