@@ -12,8 +12,8 @@ import RightItem from "./RightItem";
 
 function LatestWorks() {
   return (
-    <div className={styles.wrapper}>
-      <h2 id="works">Work</h2>
+    <div id="works" className={styles.wrapper}>
+      <h2>Work</h2>
       <div className={styles.masonry}>
         {/* Left {Big blocks} */}
         <div className={styles.masonry__left}>
@@ -48,10 +48,10 @@ function LatestWorks() {
             title="Chatbox App"
             tags="UX/UI, Frontend, Backend, 2023"
           />
-          {/* <div>
+          <div>
             <Link href="/">
               <a className={styles.project__seemore}>See more works</a>
-            </Link> */}
+            </Link>
           </div>
           {/* end proj */}
         </div>
