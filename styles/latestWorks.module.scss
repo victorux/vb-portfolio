@@ -1,16 +1,14 @@
-@import 'breakpoints';
-@import 'colors';
-@import 'fonts';
-
+@import "breakpoints";
+@import "colors";
+@import "fonts";
 
 .wrapper {
-
   max-width: 1400px;
   margin: 0 auto;
 
   @include xs {
     padding: 0 40px;
-  } 
+  }
 
   @include md {
     padding: 60px;
@@ -18,7 +16,7 @@
 
   @include xxl {
     padding: 0px;
-  } 
+  }
 
   h2 {
     margin-top: 60px;
@@ -29,13 +27,12 @@
 
     @include xs {
       margin-top: 80px;
-    } 
-  
+    }
+
     @include md {
       margin-top: 120px;
       font-size: 2.625rem;
     }
-  
   }
 
   p {
@@ -47,32 +44,29 @@
     font-weight: 400;
     letter-spacing: 0.75px;
     margin-bottom: 40px;
-    @include md{
+    @include md {
       font-size: 1.625rem;
       margin-bottom: 80px;
     }
   }
-
 }
-
 
 .projectsContainer {
   margin-top: 40px;
   width: 100%;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
-
 .project__item_right {
-  @include xs{
+  @include xs {
     width: calc(100vw - 90px);
   }
 
-  @include md{
+  @include md {
     width: calc(100vw - 240px);
   }
 
-  @include lg{
+  @include lg {
     width: 400px;
   }
 
@@ -81,29 +75,28 @@
     overflow: hidden;
   }
 
-  img{
+  img {
     transition: all 180ms ease-in-out;
   }
-
 }
 
 .project__item_left {
-  @include xs{
+  @include xs {
     width: calc(100vw - 90px);
   }
 
-  @include md{
+  @include md {
     width: calc(100vw - 240px);
   }
 
-  @include lg{
+  @include lg {
     max-width: 600px;
   }
 
-  .imgg{
+  .imgg {
     overflow: hidden;
-    
-    img{
+
+    img {
       transition: all 180ms ease-in-out;
     }
   }
@@ -111,24 +104,20 @@
 
 .project__item_right,
 .project__item_left {
-  &:hover .imgg{
+  &:hover .imgg {
     box-shadow: 12px 12px 16px rgb(201 206 210 / 35%);
 
-    img{
+    img {
       transform: scale(1.05);
       transition: all 180ms ease-out;
     }
-    
   }
 
-  &:hover .project__category{
+  &:hover .project__category {
     transition: all 400ms ease-in;
     opacity: 1;
   }
 }
-
-
-
 
 // Masonry
 
@@ -148,7 +137,7 @@
   }
 }
 
-.masonry__left, 
+.masonry__left,
 .masonry__right {
   gap: 60px;
 }
@@ -156,31 +145,31 @@
 .masonry__left {
   display: flex;
   flex-direction: column;
-
 }
 
 .masonry__right {
   display: flex;
   flex-direction: column;
 
-  @include xs{
+  @include xs {
     align-items: center;
   }
 
-  @include lg{
+  @include lg {
     align-items: flex-start;
   }
 }
 
 .masonry__left,
 .masonry__right {
-
   .project__title {
     margin-top: 30px;
     font-family: $serif;
     font-size: 1.5rem;
     color: $black;
     letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
   }
 
   .project__category {
@@ -188,10 +177,10 @@
     color: $gray_400;
     font-weight: normal;
     margin-top: 5px;
-    letter-spacing: 0.40px;
+    letter-spacing: 0.4px;
 
     font-size: 1.1rem;
-    @include md{
+    @include md {
       font-size: 1.3125rem;
     }
 
@@ -203,7 +192,6 @@
       opacity: 0;
     }
   }
-
 }
 
 .project__seemore {

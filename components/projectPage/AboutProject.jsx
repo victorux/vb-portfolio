@@ -11,14 +11,16 @@ function AboutProject(props) {
           <h1 className={styles.title}>{props.title}</h1>
           {props.children}
           <div className={styles.space30}></div>
-          <a
-            href={props.link}
-            target="_blank"
-            rel="noreferrer"
-            className={styles.link}
-          >
-            Visit Website <span>→</span>
-          </a>
+          {props.showbtn && (
+            <a
+              href={props.link}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.link}
+            >
+              Visit Website <span>→</span>
+            </a>
+          )}
         </div>
         <div className={styles.rightBlock}>
           <div>
