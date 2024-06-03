@@ -22,6 +22,7 @@ function LatestWorks() {
             imgSrc={bymateImg}
             title="Bymate"
             tags="FYP, UX/UI, Frontend, Backend, 2024"
+            new
           />
           <LeftItem
             link="/projects/coffetino"
@@ -39,6 +40,7 @@ function LatestWorks() {
             imgSrc={irelandGolfBallsImg}
             title="IrelandGolfBalls"
             tags="UX/UI, 2024"
+            new
           />
           <RightItem
             link="/projects/chatbox"
