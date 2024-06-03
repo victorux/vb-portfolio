@@ -13,8 +13,7 @@ import RightItem from "./RightItem";
 function LatestWorks() {
   return (
     <div className={styles.wrapper}>
-      <h2 id="works">My Latest Works</h2>
-      <p>Some Things I have built</p>
+      <h2 id="works">Work</h2>
       <div className={styles.masonry}>
         {/* Left {Big blocks} */}
         <div className={styles.masonry__left}>
