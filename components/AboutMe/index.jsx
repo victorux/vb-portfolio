@@ -36,13 +36,13 @@ function AboutMe() {
       <div ref={ref} className={styles.container}>
         <div className={styles.leftSection}>
           <p className={styles.description}>
-            I&apos;m in my final year studying Digital Media Design at the
-            University of Limerick. I&apos;ve spent 5+ years doing UX/UI design
-            and web development, previously at Fuselab Creative as a UI
-            Designer. For the past 2 years, Ive been getting into frontend
-            development, which I&apos;ve really enjoyed. I love making things
-            that people enjoy using. And in my free time, I like checking out
-            the latest design trends, tech, and going on trips.
+            I&apos;m a fresh graduate with a degree in Digital Media Design from
+            the University of Limerick. I previously worked at Fuselab Creative
+            as a UI Designer. For the past 2 years, I&apos;ve focused on
+            frontend development, which I&apos;ve found highly rewarding.
+            I&apos;m dedicated to creating intuitive and engaging user
+            experiences. In my free time, I enjoy exploring the latest design
+            trends, tech, and traveling.
           </p>
         </div>
         <div className={styles.rightSection}>
