@@ -5,34 +5,22 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "@sendgrid/mail": "^7.7.0",
-    "formik": "^2.2.9",
-    "framer-motion": "^3.10.6",
-    "gray-matter": "^4.0.3",
-    "next": "10.0.9",
-    "next-compose-plugins": "^2.2.1",
-    "next-mdx-enhanced": "^2.0.0",
-    "next-mdx-remote": "^2.1.0",
-    "prop-types": "^15.8.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-feather": "^2.0.9",
-    "react-intersection-observer": "^8.32.5",
-    "react-responsive": "^8.2.0",
-    "react-scroll": "^1.8.7",
-    "react-scroll-locky": "^1.5.0",
-    "remark-frontmatter": "^3.0.0",
-    "sass": "^1.32.0",
-    "use-copy": "^0.0.2",
-    "yup": "^0.32.11"
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.66.1",               // if you use Sass/SCSS
+    "axios": "^1.4.0",               // example for API requests
+    // add or update other dependencies you need
   },
   "devDependencies": {
-    "@svgr/webpack": "^5.5.0",
-    "eslint": "^7.23.0"
+    "eslint": "^8.47.0",             // latest ESLint
+    "eslint-config-next": "^13.4.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
