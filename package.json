@@ -9,18 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.4.1",
+    "@mdx-js/react": "^2.4.1",
+    "@sendgrid/mail": "^7.9.0",
+    "formik": "^2.2.9",
+    "framer-motion": "^10.12.16",
+    "gray-matter": "^4.0.3",
     "next": "^13.4.4",
+    "next-compose-plugins": "^2.2.1",
+    "next-mdx-remote": "^4.3.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.66.1",               // if you use Sass/SCSS
-    "axios": "^1.4.0",               // example for API requests
-    // add or update other dependencies you need
-  },
-  "devDependencies": {
-    "eslint": "^8.47.0",             // latest ESLint
-    "eslint-config-next": "^13.4.4"
-  },
-  "engines": {
-    "node": ">=16.0.0"
-  }
-}
+    "react-feather": "^2.0.10",
+    "react-intersection-observer": "^9.4.0",
+    "react-responsive": "^9.0.2",
+    "react-scroll": "^1.8.9",
+    "react-scroll-locky": "^1.6.0",
+    "remark-frontmatter": "^4.0.1",
+    "sass": "^1.66.1",
