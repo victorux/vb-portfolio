@@ -36,6 +36,6 @@
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
     "eslint": "8.13.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "10.0.9"
   }
 }
